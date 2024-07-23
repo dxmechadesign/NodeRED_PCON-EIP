@@ -1,0 +1,4555 @@
+Node-RED デプロイ
+タブ & リンク
+手動動作
+軸01_設定
+軸01_押付動作設定
+軸01_動作
+グラフ
+フローを書き出し
+書き出し
+[
+    {
+        "id": "15f9fed1efc9806d",
+        "type": "tab",
+        "label": "EIP_AX01",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b412594149f5af42",
+        "type": "tab",
+        "label": "動作_AX01",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ebb109eeb71cb9ae",
+        "type": "tab",
+        "label": "設定_AX01",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "83c55317b5024d65",
+        "type": "eip-io scanner",
+        "name": "Scanner",
+        "ipaddress": ""
+    },
+    {
+        "id": "ef7ee9681b4c7a6d",
+        "type": "ui_group",
+        "name": "軸01_動作",
+        "tab": "7a003b9823a77051",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5a6e4e81bf80c0cf",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED ダッシュボード",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "YYYY/MM/DD",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "0600a4ef969b41af",
+        "type": "ui_group",
+        "name": "軸01_設定",
+        "tab": "7a003b9823a77051",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7a003b9823a77051",
+        "type": "ui_tab",
+        "name": "手動動作",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4ae8d27ef9d8f85b",
+        "type": "eip-io connection",
+        "name": "",
+        "scanner": "83c55317b5024d65",
+        "ipaddress": "192.168.1.3",
+        "rpi": "50",
+        "assconfig": "0",
+        "sizeconfig": "0",
+        "assinput": "100",
+        "sizeinput": "32",
+        "assoutput": "150",
+        "sizeoutput": "32",
+        "edsfile": "Drop EDS File Here!",
+        "connection": "",
+        "connections": [
+            {
+                "value": "",
+                "label": "No Connections"
+            }
+        ],
+        "configdata": []
+    },
+    {
+        "id": "9f383a4f387f2bb7",
+        "type": "ui_group",
+        "name": "グラフ",
+        "tab": "7a003b9823a77051",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3fb627407ad74259",
+        "type": "ui_group",
+        "name": "軸01_押付動作設定",
+        "tab": "7a003b9823a77051",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "24198d930c4f6d10",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-31_状態信号2",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "31",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 1340,
+        "wires": [
+            [
+                "a3ebadeced602f04"
+            ]
+        ]
+    },
+    {
+        "id": "bd26ce4fc5dcbcc8",
+        "type": "inject",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "24198d930c4f6d10",
+                "c8b9b0343b96342c",
+                "4c8f02185529c311",
+                "169712560ec7fef4",
+                "9c67881f3a5c3449",
+                "f09b9f092e479113",
+                "c212c28c57161c1c",
+                "7b2274623beca855",
+                "d8469dfee10d932b",
+                "37e1192766affeb3",
+                "48091d8804dcb6a2",
+                "0151256efaff0398",
+                "480d370a746c9c64",
+                "d6cab2c71dba7247",
+                "fe904a548c21fb1c",
+                "cb27258febd89a86",
+                "ba966278d9d5ea04",
+                "752d78527671f0fa",
+                "9b565e1e4489b836",
+                "887d9902fd7fc699",
+                "dc824d03c1fbc0de",
+                "961504c1f70cae4e",
+                "60d8836592af3c76"
+            ]
+        ]
+    },
+    {
+        "id": "da8a079bb2faeace",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN31-00～07)",
+        "func": "var byteNo=31\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\",msg0.payload);\nvar msg1 = { payload: msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\",msg1.payload);\nvar msg2 = { payload: msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\",msg2.payload);\nvar msg3 = { payload: msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\",msg3.payload);\nvar msg4 = { payload: msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\",msg4.payload);\nvar msg5 = { payload: msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\",msg5.payload);\nvar msg6 = { payload: msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\",msg6.payload);\nvar msg7 = { payload: msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\",msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "c8b9b0343b96342c",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-30_状態信号2",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "30",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 1300,
+        "wires": [
+            [
+                "268ab88d55b1983a"
+            ]
+        ]
+    },
+    {
+        "id": "936c2bd2b4128f07",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN30-00～07)",
+        "func": "var byteNo=30\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\", msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\", msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\", msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\", msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\", msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\", msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\", msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\", msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "c212c28c57161c1c",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-29_状態信号1",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "29",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 1260,
+        "wires": [
+            [
+                "0ef4b0c9622677b8"
+            ]
+        ]
+    },
+    {
+        "id": "d46d65a7d68288a3",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN29-00～07)",
+        "func": "var byteNo=29\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\", msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\", msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\", msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\", msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\", msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\", msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\", msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\", msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "f09b9f092e479113",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-28_状態信号1",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "28",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 1220,
+        "wires": [
+            [
+                "49e137a3858c6e40"
+            ]
+        ]
+    },
+    {
+        "id": "7f1fada28f724037",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN28-00～07)",
+        "func": "var byteNo=28\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\",msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\",msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\", msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\", msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\", msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\", msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\", msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\", msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "9c67881f3a5c3449",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-26_通算走行距離",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "26",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 290,
+        "y": 1140,
+        "wires": [
+            [
+                "c2cf8e4a8d6a6ebc"
+            ]
+        ]
+    },
+    {
+        "id": "bf0d6533858a4ef6",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN26-00～07)",
+        "func": "var byteNo=26;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = { payload: msg.payload[0].bit0 };\nglobal.set(id + \"IN\" + byteNo + \"-00\", msg0.payload);\nvar msg1 = { payload: msg.payload[0].bit1 };\nglobal.set(id + \"IN\" + byteNo + \"-01\", msg1.payload);\nvar msg2 = { payload: msg.payload[0].bit2 };\nglobal.set(id + \"IN\" + byteNo + \"-02\", msg2.payload);\nvar msg3 = { payload: msg.payload[0].bit3 };\nglobal.set(id + \"IN\" + byteNo + \"-03\", msg3.payload);\nvar msg4 = { payload: msg.payload[0].bit4 };\nglobal.set(id + \"IN\" + byteNo + \"-04\", msg4.payload);\nvar msg5 = { payload: msg.payload[0].bit5 };\nglobal.set(id + \"IN\" + byteNo + \"-05\", msg5.payload);\nvar msg6 = { payload: msg.payload[0].bit6 };\nglobal.set(id + \"IN\" + byteNo + \"-06\", msg6.payload);\nvar msg7 = { payload: msg.payload[0].bit7 };\nglobal.set(id + \"IN\" + byteNo + \"-07\", msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "169712560ec7fef4",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-25_通算走行距離",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "25",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 290,
+        "y": 1100,
+        "wires": [
+            [
+                "56d353741320d3b8"
+            ]
+        ]
+    },
+    {
+        "id": "7889f32d56d6d2de",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN25-00～07)",
+        "func": "var byteNo=25;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = { payload: msg.payload[0].bit0 };\nglobal.set(id + \"IN\" + byteNo + \"-00\", msg0.payload);\nvar msg1 = { payload: msg.payload[0].bit1 };\nglobal.set(id + \"IN\" + byteNo + \"-01\", msg1.payload);\nvar msg2 = { payload: msg.payload[0].bit2 };\nglobal.set(id + \"IN\" + byteNo + \"-02\", msg2.payload);\nvar msg3 = { payload: msg.payload[0].bit3 };\nglobal.set(id + \"IN\" + byteNo + \"-03\", msg3.payload);\nvar msg4 = { payload: msg.payload[0].bit4 };\nglobal.set(id + \"IN\" + byteNo + \"-04\", msg4.payload);\nvar msg5 = { payload: msg.payload[0].bit5 };\nglobal.set(id + \"IN\" + byteNo + \"-05\", msg5.payload);\nvar msg6 = { payload: msg.payload[0].bit6 };\nglobal.set(id + \"IN\" + byteNo + \"-06\", msg6.payload);\nvar msg7 = { payload: msg.payload[0].bit7 };\nglobal.set(id + \"IN\" + byteNo + \"-07\", msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "4c8f02185529c311",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-24_通算走行距離",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "24",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 290,
+        "y": 1060,
+        "wires": [
+            [
+                "8f020857a9f2f518"
+            ]
+        ]
+    },
+    {
+        "id": "875b548de918872b",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN24-00～07)",
+        "func": "var byteNo=24;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\",msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\",msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\",msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\",msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\",msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\",msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\",msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\",msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "48091d8804dcb6a2",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-13_アラームコード",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "13",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 300,
+        "y": 580,
+        "wires": [
+            [
+                "50b69bb17555c1ec"
+            ]
+        ]
+    },
+    {
+        "id": "7b2274623beca855",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-22_通算移動回数",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "22",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 290,
+        "y": 980,
+        "wires": [
+            [
+                "3b3fc3f1c9776e33"
+            ]
+        ]
+    },
+    {
+        "id": "3e370728abdb84e2",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN22-00～07)",
+        "func": "var byteNo=22;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = { payload: msg.payload[0].bit0 };\nglobal.set(id + \"IN\" + byteNo + \"-00\", msg0.payload);\nvar msg1 = { payload: msg.payload[0].bit1 };\nglobal.set(id + \"IN\" + byteNo + \"-01\", msg1.payload);\nvar msg2 = { payload: msg.payload[0].bit2 };\nglobal.set(id + \"IN\" + byteNo + \"-02\", msg2.payload);\nvar msg3 = { payload: msg.payload[0].bit3 };\nglobal.set(id + \"IN\" + byteNo + \"-03\", msg3.payload);\nvar msg4 = { payload: msg.payload[0].bit4 };\nglobal.set(id + \"IN\" + byteNo + \"-04\", msg4.payload);\nvar msg5 = { payload: msg.payload[0].bit5 };\nglobal.set(id + \"IN\" + byteNo + \"-05\", msg5.payload);\nvar msg6 = { payload: msg.payload[0].bit6 };\nglobal.set(id + \"IN\" + byteNo + \"-06\", msg6.payload);\nvar msg7 = { payload: msg.payload[0].bit7 };\nglobal.set(id + \"IN\" + byteNo + \"-07\", msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "0151256efaff0398",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-12_アラームコード",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "12",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 300,
+        "y": 540,
+        "wires": [
+            [
+                "1f67b91c1cee774a"
+            ]
+        ]
+    },
+    {
+        "id": "d8469dfee10d932b",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-21_通算移動回数",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "21",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 290,
+        "y": 940,
+        "wires": [
+            [
+                "f716c34fdd68c005"
+            ]
+        ]
+    },
+    {
+        "id": "97831ff03efe6d29",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN21-00～07)",
+        "func": "var byteNo=21;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = { payload: msg.payload[0].bit0 };\nglobal.set(id + \"IN\" + byteNo + \"-00\", msg0.payload);\nvar msg1 = { payload: msg.payload[0].bit1 };\nglobal.set(id + \"IN\" + byteNo + \"-01\", msg1.payload);\nvar msg2 = { payload: msg.payload[0].bit2 };\nglobal.set(id + \"IN\" + byteNo + \"-02\", msg2.payload);\nvar msg3 = { payload: msg.payload[0].bit3 };\nglobal.set(id + \"IN\" + byteNo + \"-03\", msg3.payload);\nvar msg4 = { payload: msg.payload[0].bit4 };\nglobal.set(id + \"IN\" + byteNo + \"-04\", msg4.payload);\nvar msg5 = { payload: msg.payload[0].bit5 };\nglobal.set(id + \"IN\" + byteNo + \"-05\", msg5.payload);\nvar msg6 = { payload: msg.payload[0].bit6 };\nglobal.set(id + \"IN\" + byteNo + \"-06\", msg6.payload);\nvar msg7 = { payload: msg.payload[0].bit7 };\nglobal.set(id + \"IN\" + byteNo + \"-07\", msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "37e1192766affeb3",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-20_通算移動回数",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "20",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 290,
+        "y": 900,
+        "wires": [
+            [
+                "4ec9a4a2beb08f3b"
+            ]
+        ]
+    },
+    {
+        "id": "81f0063d0f7c40db",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN20-00～07)",
+        "func": "var byteNo=20;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\",msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\",msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\",msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\",msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\",msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\",msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\",msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\",msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "1f67b91c1cee774a",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN12)",
+        "func": "var byteNo=12;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nglobal.set(id + \"IN\" + byteNo, msg.payload[0].toString(16));\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50b69bb17555c1ec",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN13)",
+        "func": "var byteNo=13;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nglobal.set(id + \"IN\" + byteNo, msg.payload[0].toString(16));\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "480d370a746c9c64",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-11_現在速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "11",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 500,
+        "wires": [
+            [
+                "8a65daf563be5afd"
+            ]
+        ]
+    },
+    {
+        "id": "8a65daf563be5afd",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN11)",
+        "func": "var byteNo=11;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nglobal.set(id + \"IN\" + byteNo,msg.payload[0].toString(16));\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6cab2c71dba7247",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-10_現在速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "10",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 460,
+        "wires": [
+            [
+                "eb0c38d0901a5775"
+            ]
+        ]
+    },
+    {
+        "id": "eb0c38d0901a5775",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN10)",
+        "func": "var byteNo=10;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nglobal.set(id + \"IN\" + byteNo, msg.payload[0].toString(16));\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe904a548c21fb1c",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-9_現在速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "9",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 420,
+        "wires": [
+            [
+                "5b504077471f9dc2"
+            ]
+        ]
+    },
+    {
+        "id": "5b504077471f9dc2",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN9)",
+        "func": "var byteNo=9;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nglobal.set(id + \"IN\" + byteNo,msg.payload[0].toString(16));\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb27258febd89a86",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-8_現在速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "8",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 380,
+        "wires": [
+            [
+                "dda0f953762176b4"
+            ]
+        ]
+    },
+    {
+        "id": "dda0f953762176b4",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN8)",
+        "func": "var byteNo=8\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nglobal.set(id + \"IN\" + byteNo,msg.payload[0].toString(16));\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba966278d9d5ea04",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-6_指令電流",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "6",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "647d270cd6bfb5d9"
+            ]
+        ]
+    },
+    {
+        "id": "305130fa07ce5f84",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN06-00～07)",
+        "func": "var byteNo=6;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\",msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\",msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\",msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\",msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\",msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\",msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\",msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\",msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "752d78527671f0fa",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-5_指令電流",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "5",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "55a026515eba6c0e"
+            ]
+        ]
+    },
+    {
+        "id": "36ad8c5094ed2817",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN05-00～07)",
+        "func": "var byteNo=5;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\",msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\",msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\",msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\",msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\",msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\",msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\",msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\",msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9b565e1e4489b836",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-4_指令電流",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "4",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "97e9ffb7e8dd5b1e"
+            ]
+        ]
+    },
+    {
+        "id": "13bc2c90408790d2",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN04-00～07)",
+        "func": "var byteNo=4;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar msg0 = {payload:msg.payload[0].bit0};\nglobal.set(id + \"IN\" + byteNo + \"-00\",msg0.payload);\nvar msg1 = {payload:msg.payload[0].bit1};\nglobal.set(id + \"IN\" + byteNo + \"-01\",msg1.payload);\nvar msg2 = {payload:msg.payload[0].bit2};\nglobal.set(id + \"IN\" + byteNo + \"-02\",msg2.payload);\nvar msg3 = {payload:msg.payload[0].bit3};\nglobal.set(id + \"IN\" + byteNo + \"-03\",msg3.payload);\nvar msg4 = {payload:msg.payload[0].bit4};\nglobal.set(id + \"IN\" + byteNo + \"-04\",msg4.payload);\nvar msg5 = {payload:msg.payload[0].bit5};\nglobal.set(id + \"IN\" + byteNo + \"-05\",msg5.payload);\nvar msg6 = {payload:msg.payload[0].bit6};\nglobal.set(id + \"IN\" + byteNo + \"-06\",msg6.payload);\nvar msg7 = {payload:msg.payload[0].bit7};\nglobal.set(id + \"IN\" + byteNo + \"-07\",msg7.payload);\n\n//return [msg0,msg1,msg2,msg3,msg4,msg5,msg6,msg7];\n\n\n\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "887d9902fd7fc699",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-3_現在位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "3",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "246e31fa3168e493"
+            ]
+        ]
+    },
+    {
+        "id": "246e31fa3168e493",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN3)",
+        "func": "var byteNo = 3\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar strbyte = msg.payload[0].toString(16).padStart(2, \"0\")\n\nglobal.set(id + \"IN\" + byteNo, strbyte);\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc824d03c1fbc0de",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-2_現在位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "2",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "2a26f475b7297efe"
+            ]
+        ]
+    },
+    {
+        "id": "2a26f475b7297efe",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN2)",
+        "func": "var byteNo=2;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar strbyte = msg.payload[0].toString(16).padStart(2,\"0\")\n\nglobal.set(id + \"IN\" + byteNo, strbyte);\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "961504c1f70cae4e",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-1_現在位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "1",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "f23dc47ad76f8e0c"
+            ]
+        ]
+    },
+    {
+        "id": "f23dc47ad76f8e0c",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN1)",
+        "func": "var byteNo=1;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar strbyte = msg.payload[0].toString(16).padStart(2,\"0\")\n\nglobal.set(id + \"IN\" + byteNo, strbyte);\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60d8836592af3c76",
+        "type": "eip-io in",
+        "z": "15f9fed1efc9806d",
+        "name": "in-0_現在位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "0",
+        "bitOffset": 0,
+        "bitSize": "8",
+        "updateRate": "50",
+        "bigEndian": false,
+        "dataType": "Buffer",
+        "decimals": 0,
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "8553e6c23ecbcff0"
+            ]
+        ]
+    },
+    {
+        "id": "8553e6c23ecbcff0",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "global.set(AX\"ID\"_IN0)",
+        "func": "var byteNo=0\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar strbyte = msg.payload[0].toString(16).padStart(2,\"0\")\n\nglobal.set(id + \"IN\" + byteNo, strbyte);\nmsg.payload = global.get(id + \"IN\" + byteNo)\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f246e208cb3f2df3",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-0_目標位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": 0,
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 100,
+        "wires": [
+            [
+                "b7dc47edbb28d4de"
+            ]
+        ]
+    },
+    {
+        "id": "1d52291d360f3edc",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-1_目標位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "1",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1c5c97e9e33ac83",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-2_目標位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "2",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6699e8640a179b70",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-3_目標位置",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "3",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61c85333fd1b75c6",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 27",
+        "func": "var id = flow.get(\"ID\")\nvar arg = \"DT01\"\n\nvar dt = global.get(\"AX\" + id + \"_\" + arg)\nvar flowdt = flow.get(arg)\n\nif(flowdt !== dt){\n    msg.payload = dt\n    node.send(msg);\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 100,
+        "wires": [
+            [
+                "f246e208cb3f2df3"
+            ]
+        ]
+    },
+    {
+        "id": "9864d0b092ac358a",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-4_位置決め幅",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "4",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 260,
+        "wires": [
+            [
+                "ee0d45749afdc30a"
+            ]
+        ]
+    },
+    {
+        "id": "e91bdebc40c6e125",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-5_位置決め幅",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "5",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cbf4e90d9bd0ed09",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-6_位置決め幅",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "6",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60a04388c398d97d",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-7_位置決め幅",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "7",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3f203395a31a78b",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-8_速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "8",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1310,
+        "y": 420,
+        "wires": [
+            [
+                "a75c8efd93c9f4d4"
+            ]
+        ]
+    },
+    {
+        "id": "eb7995955e102a3a",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-9_速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "9",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1310,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0af0dce6def5f97",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-10_速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "10",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1310,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a81b26209ebb86f",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-11_速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "11",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1310,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "892af6e505368f2c",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-20_加速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "20",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 900,
+        "wires": [
+            [
+                "7edbfce1ec80d0ae"
+            ]
+        ]
+    },
+    {
+        "id": "9a91a1ee6101f40d",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-21_加速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "21",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "356e73f5ab95b080",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-22_減速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "22",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 980,
+        "wires": [
+            [
+                "8981bda3adf0b4a4"
+            ]
+        ]
+    },
+    {
+        "id": "4b32c7ce44f5eb16",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-23_減速度",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "23",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1320,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "418fa32eca57c9dc",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 28",
+        "func": "var byteNo=30;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\nvar dt = flow.get(\"DT\" + byteNo)\n\nvar tmpDT = global.get(id + \"DT\" + byteNo + \"-00\") * 1\n    + global.get(id + \"DT\" + byteNo + \"-01\") * 2\n    + global.get(id + \"DT\" + byteNo + \"-02\") * 4\n    + global.get(id + \"DT\" + byteNo + \"-03\") * 8\n    + global.get(id + \"DT\" + byteNo + \"-04\") * 16\n    + global.get(id + \"DT\" + byteNo + \"-05\") * 32\n    + global.get(id + \"DT\" + byteNo + \"-06\") * 64\n    + global.get(id + \"DT\" + byteNo + \"-07\") * 128\n\nif (tmpDT !== dt){\n    msg.payload = tmpDT\n    flow.set(\"DT\" + byteNo, tmpDT)\n    node.send(msg);\n}\n\n//return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1300,
+        "wires": [
+            [
+                "466b2852f9546450"
+            ]
+        ]
+    },
+    {
+        "id": "de046fbce8c3be38",
+        "type": "inject",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "props": [],
+        "repeat": "0.05",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "x": 970,
+        "y": 100,
+        "wires": [
+            [
+                "418fa32eca57c9dc",
+                "91ebeeead3f6e6f2",
+                "071a52cd2bf974e4",
+                "bd1443aa3a56f498",
+                "e55beb36715b5076",
+                "61c85333fd1b75c6",
+                "7eaf7bb2faf55769",
+                "404e5361c888b7a6",
+                "d4b455564b53fbad",
+                "d6d1f9b9a91338a6"
+            ]
+        ]
+    },
+    {
+        "id": "138ca5dc8d6fa6f3",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "制御信号初期化",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nglobal.set(id + \"DT28-00\", 0)\nglobal.set(id + \"DT28-01\", 0)\nglobal.set(id + \"DT28-02\", 0)\nglobal.set(id + \"DT28-03\", 0)\nglobal.set(id + \"DT28-04\", 0)\nglobal.set(id + \"DT28-05\", 0)\nglobal.set(id + \"DT28-06\", 0)\nglobal.set(id + \"DT28-07\", 0)\n\nglobal.set(id + \"DT29-00\", 0)\nglobal.set(id + \"DT29-01\", 0)\nglobal.set(id + \"DT29-02\", 0)\nglobal.set(id + \"DT29-03\", 0)\nglobal.set(id + \"DT29-04\", 0)\nglobal.set(id + \"DT29-05\", 0)\nglobal.set(id + \"DT29-06\", 0)\nglobal.set(id + \"DT29-07\", 0)\n\nglobal.set(id + \"DT30-00\",0)\nglobal.set(id + \"DT30-01\",0)\nglobal.set(id + \"DT30-02\",0)\nglobal.set(id + \"DT30-03\",0)\nglobal.set(id + \"DT30-04\",0)\nglobal.set(id + \"DT30-05\",0)\nglobal.set(id + \"DT30-06\",0)\nglobal.set(id + \"DT30-07\",0)\n\nglobal.set(id + \"DT31-00\", 0)\nglobal.set(id + \"DT31-01\", 0)\nglobal.set(id + \"DT31-02\", 0)\nglobal.set(id + \"DT31-03\", 0)\nglobal.set(id + \"DT31-04\", 0)\nglobal.set(id + \"DT31-05\", 0)\nglobal.set(id + \"DT31-06\", 0)\nglobal.set(id + \"DT31-07\", 0)\n\nreturn msg;",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1940,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d0fb918f0e096f73",
+        "type": "inject",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1790,
+        "y": 60,
+        "wires": [
+            [
+                "138ca5dc8d6fa6f3"
+            ]
+        ]
+    },
+    {
+        "id": "466b2852f9546450",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-30_制御信号2",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "30",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91ebeeead3f6e6f2",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 31",
+        "func": "var byteNo=31;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\nvar dt = flow.get(\"DT\" + byteNo)\n\nvar tmpDT = global.get(id + \"DT\" + byteNo + \"-00\") * 1\n    + global.get(id + \"DT\" + byteNo + \"-01\") * 2\n    + global.get(id + \"DT\" + byteNo + \"-02\") * 4\n    + global.get(id + \"DT\" + byteNo + \"-03\") * 8\n    + global.get(id + \"DT\" + byteNo + \"-04\") * 16\n    + global.get(id + \"DT\" + byteNo + \"-05\") * 32\n    + global.get(id + \"DT\" + byteNo + \"-06\") * 64\n    + global.get(id + \"DT\" + byteNo + \"-07\") * 128\n\nif (tmpDT !== dt){\n    msg.payload = tmpDT\n    flow.set(\"DT\" + byteNo, tmpDT)\n    node.send(msg);\n}\n//return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1340,
+        "wires": [
+            [
+                "715bbd5718e73872"
+            ]
+        ]
+    },
+    {
+        "id": "715bbd5718e73872",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-31_制御信号2",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "31",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c565cb44829a9e5c",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-12_ゾーン境界値+",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "12",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 580,
+        "wires": [
+            [
+                "0be09daa7a7656cf"
+            ]
+        ]
+    },
+    {
+        "id": "ac31399c26893d4e",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-13_ゾーン境界値+",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "13",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ce4c106e870d7e2",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-14_ゾーン境界値+",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "14",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15f0bcab6c74c017",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-15_ゾーン境界値+",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "15",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09249aa6340329fb",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-16_ゾーン境界値-",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "16",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 740,
+        "wires": [
+            [
+                "d8b7cff9b4fe5f8a"
+            ]
+        ]
+    },
+    {
+        "id": "b5aa54bc9981dac8",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-17_ゾーン境界値-",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "17",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f161a92c15bb46aa",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-18_ゾーン境界値-",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "18",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d877746e56640701",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-19_ゾーン境界値-",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "19",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82439447330f615c",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-24_押付け電流値",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "24",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 1060,
+        "wires": [
+            [
+                "d66b142c0c2319ba"
+            ]
+        ]
+    },
+    {
+        "id": "8f5e743b4a4e2e69",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-25_押付け電流値",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "25",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "baba8b0827b422c9",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-26_負荷電流閾値",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "26",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a607369e5abf74cb",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "d": true,
+        "name": "out-27_負荷電流閾値",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "27",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1340,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94c6221276d4de33",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-28_制御信号1",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "28",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7eaf7bb2faf55769",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 32",
+        "func": "var byteNo=28;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\nvar dt = flow.get(\"DT\" + byteNo)\n\nvar tmpDT = global.get(id + \"DT\" + byteNo + \"-00\") * 1\n    + global.get(id + \"DT\" + byteNo + \"-01\") * 2\n    + global.get(id + \"DT\" + byteNo + \"-02\") * 4\n    + global.get(id + \"DT\" + byteNo + \"-03\") * 8\n    + global.get(id + \"DT\" + byteNo + \"-04\") * 16\n    + global.get(id + \"DT\" + byteNo + \"-05\") * 32\n    + global.get(id + \"DT\" + byteNo + \"-06\") * 64\n    + global.get(id + \"DT\" + byteNo + \"-07\") * 128\n\nif (tmpDT !== dt){\n    msg.payload = tmpDT\n    flow.set(\"DT\" + byteNo, tmpDT)\n    node.send(msg);\n}\n\n//return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1220,
+        "wires": [
+            [
+                "94c6221276d4de33"
+            ]
+        ]
+    },
+    {
+        "id": "404e5361c888b7a6",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 33",
+        "func": "var byteNo=29\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\nvar dt = flow.get(\"DT\" + byteNo)\n\nvar tmpDT = global.get(id + \"DT\" + byteNo + \"-00\") * 1\n    + global.get(id + \"DT\" + byteNo + \"-01\") * 2\n    + global.get(id + \"DT\" + byteNo + \"-02\") * 4\n    + global.get(id + \"DT\" + byteNo + \"-03\") * 8\n    + global.get(id + \"DT\" + byteNo + \"-04\") * 16\n    + global.get(id + \"DT\" + byteNo + \"-05\") * 32\n    + global.get(id + \"DT\" + byteNo + \"-06\") * 64\n    + global.get(id + \"DT\" + byteNo + \"-07\") * 128\n\nif (tmpDT !== dt){\n    msg.payload = tmpDT\n    flow.set(\"DT\" + byteNo, tmpDT)\n    node.send(msg);\n}\n\n//return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1260,
+        "wires": [
+            [
+                "7056d5801c8ebe84"
+            ]
+        ]
+    },
+    {
+        "id": "ee0d45749afdc30a",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set global",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\n//globalへ格納\nglobal.set(id + \"DT4\",msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd1dfab97780fa23",
+        "type": "inject",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 1170,
+        "y": 580,
+        "wires": [
+            [
+                "c565cb44829a9e5c"
+            ]
+        ]
+    },
+    {
+        "id": "0be09daa7a7656cf",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set global",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\n//globalへ格納\nglobal.set(id + \"DT04\",msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8b7cff9b4fe5f8a",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set global",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\n//globalへ格納\nglobal.set(id + \"DT05\",msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da69e213fd0b97d9",
+        "type": "inject",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 1170,
+        "y": 740,
+        "wires": [
+            [
+                "09249aa6340329fb"
+            ]
+        ]
+    },
+    {
+        "id": "e55beb36715b5076",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 43",
+        "func": "var id = flow.get(\"ID\")\nvar arg = \"DT03\"\n\nvar dt = global.get(\"AX\" + id + \"_\" + arg)\nvar flowdt = flow.get(arg)\n\nif(flowdt !== dt){\n    msg.payload = dt\n    node.send(msg);\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 420,
+        "wires": [
+            [
+                "b3f203395a31a78b"
+            ]
+        ]
+    },
+    {
+        "id": "bd1443aa3a56f498",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 46",
+        "func": "var id = flow.get(\"ID\")\nvar arg = \"DT06\"\n\nvar dt = global.get(\"AX\" + id + \"_\" + arg)\nvar flowdt = flow.get(arg)\n\nif(flowdt !== dt){\n    msg.payload = dt\n    node.send(msg);\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 900,
+        "wires": [
+            [
+                "892af6e505368f2c"
+            ]
+        ]
+    },
+    {
+        "id": "071a52cd2bf974e4",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 47",
+        "func": "var id = flow.get(\"ID\")\nvar arg = \"DT07\"\n\nvar dt = global.get(\"AX\" + id + \"_\" + arg)\nvar flowdt = flow.get(arg)\n\nif(flowdt !== dt){\n    msg.payload = dt\n    node.send(msg);\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 980,
+        "wires": [
+            [
+                "356e73f5ab95b080"
+            ]
+        ]
+    },
+    {
+        "id": "b7dc47edbb28d4de",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set flow",
+        "func": "//flowへ格納\nflow.set(\"DT01\",msg.payload)\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d3d636ae884bf010",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "flow初期化",
+        "func": "flow.set(\"DT01\",0)\nflow.set(\"DT02\",0)\nflow.set(\"DT03\",0)\nflow.set(\"DT04\",0)\nflow.set(\"DT05\",0)\nflow.set(\"DT06\",0)\nflow.set(\"DT07\",0)\n\nreturn msg;",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "56fab813e332b2e8",
+        "type": "inject",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "x": 1790,
+        "y": 120,
+        "wires": [
+            [
+                "d3d636ae884bf010"
+            ]
+        ]
+    },
+    {
+        "id": "a75c8efd93c9f4d4",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set flow",
+        "func": "//flowへ格納\nflow.set(\"DT03\",msg.payload)\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7edbfce1ec80d0ae",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set flow",
+        "func": "//flowへ格納\nflow.set(\"DT06\",msg.payload)\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "8981bda3adf0b4a4",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set flow",
+        "func": "//flowへ格納\nflow.set(\"DT07\",msg.payload)\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "7056d5801c8ebe84",
+        "type": "eip-io out",
+        "z": "15f9fed1efc9806d",
+        "name": "out-28_制御信号1",
+        "conn": "4ae8d27ef9d8f85b",
+        "byteOffset": "29",
+        "bitOffset": 0,
+        "dataType": "Int16",
+        "bigEndian": false,
+        "decimals": 0,
+        "x": 1330,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38f1da3abaffe4ba",
+        "type": "change",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "01",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53210d8826bf95d7",
+        "type": "inject",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 20,
+        "wires": [
+            [
+                "38f1da3abaffe4ba"
+            ]
+        ]
+    },
+    {
+        "id": "2c6bc213dfc0e9c7",
+        "type": "comment",
+        "z": "15f9fed1efc9806d",
+        "name": "PCON→NodeRED",
+        "info": "",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d85e35790c9e3076",
+        "type": "comment",
+        "z": "15f9fed1efc9806d",
+        "name": "NodeRED→PCON",
+        "info": "",
+        "x": 990,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a3ebadeced602f04",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1340,
+        "wires": [
+            [
+                "da8a079bb2faeace"
+            ]
+        ]
+    },
+    {
+        "id": "268ab88d55b1983a",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1300,
+        "wires": [
+            [
+                "936c2bd2b4128f07"
+            ]
+        ]
+    },
+    {
+        "id": "0ef4b0c9622677b8",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1260,
+        "wires": [
+            [
+                "d46d65a7d68288a3"
+            ]
+        ]
+    },
+    {
+        "id": "49e137a3858c6e40",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1220,
+        "wires": [
+            [
+                "7f1fada28f724037"
+            ]
+        ]
+    },
+    {
+        "id": "c2cf8e4a8d6a6ebc",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1140,
+        "wires": [
+            [
+                "bf0d6533858a4ef6"
+            ]
+        ]
+    },
+    {
+        "id": "56d353741320d3b8",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1100,
+        "wires": [
+            [
+                "7889f32d56d6d2de"
+            ]
+        ]
+    },
+    {
+        "id": "8f020857a9f2f518",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1060,
+        "wires": [
+            [
+                "875b548de918872b"
+            ]
+        ]
+    },
+    {
+        "id": "3b3fc3f1c9776e33",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 980,
+        "wires": [
+            [
+                "3e370728abdb84e2"
+            ]
+        ]
+    },
+    {
+        "id": "f716c34fdd68c005",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 940,
+        "wires": [
+            [
+                "97831ff03efe6d29"
+            ]
+        ]
+    },
+    {
+        "id": "4ec9a4a2beb08f3b",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 900,
+        "wires": [
+            [
+                "81f0063d0f7c40db"
+            ]
+        ]
+    },
+    {
+        "id": "647d270cd6bfb5d9",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 340,
+        "wires": [
+            [
+                "305130fa07ce5f84"
+            ]
+        ]
+    },
+    {
+        "id": "55a026515eba6c0e",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [
+                "36ad8c5094ed2817"
+            ]
+        ]
+    },
+    {
+        "id": "97e9ffb7e8dd5b1e",
+        "type": "buffer-parser",
+        "z": "15f9fed1efc9806d",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "8bit",
+                "name": "item2",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": true,
+        "fanOutMultipleResult": true,
+        "setTopic": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "13bc2c90408790d2"
+            ]
+        ]
+    },
+    {
+        "id": "d4b455564b53fbad",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 55",
+        "func": "var byteNo=24;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar globaldt = global.get(id + \"DT\" + byteNo)\n\n\nmsg.payload = globaldt\nnode.send(msg);\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 1060,
+        "wires": [
+            [
+                "82439447330f615c"
+            ]
+        ]
+    },
+    {
+        "id": "d6d1f9b9a91338a6",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "function 56",
+        "func": "var byteNo=4;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\nvar dt = flow.get(\"DT\" + byteNo)\n\nvar globaldt = global.get(id + \"DT\" + byteNo)\nvar press = global.get(id + \"DT28-01\")\n\nif(press==1){\n    msg.payload = global.get(id + \"DT4-2\")\n    node.send(msg)\n}\nelse{\n    msg.payload = 10\n    node.send(msg)\n}\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 260,
+        "wires": [
+            [
+                "9864d0b092ac358a"
+            ]
+        ]
+    },
+    {
+        "id": "d66b142c0c2319ba",
+        "type": "function",
+        "z": "15f9fed1efc9806d",
+        "name": "set flow",
+        "func": "//flowへ格納\nflow.set(\"DT24\",msg.payload)\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "22ea115ecad54d21",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "edda8af11c2a6edb"
+            ]
+        ]
+    },
+    {
+        "id": "edda8af11c2a6edb",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "PCON",
+        "func": "var id = flow.get(\"ID\")\n\nif(msg.payload == true){\nglobal.set(\"AX\" + id + \"_\" + \"DT30-04\",1)\n}\n\nif(msg.payload == false){\nglobal.set(\"AX\" + id + \"_\" + \"DT30-04\",0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c75a1f821d6e32a",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "edda8af11c2a6edb"
+            ]
+        ]
+    },
+    {
+        "id": "b5c56a27cbe3bf76",
+        "type": "change",
+        "z": "b412594149f5af42",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "01",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25fa1a229da9b05f",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 20,
+        "wires": [
+            [
+                "b5c56a27cbe3bf76"
+            ]
+        ]
+    },
+    {
+        "id": "8a02d8e49ed2bf42",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "通算走行距離",
+        "func": "var byteNo1=24;\nvar byteNo2=25;\nvar byteNo3=26;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"IN\" + byteNo1 + \"-00\") * 1\n    + global.get(id + \"IN\" + byteNo1 + \"-01\") * 2\n    + global.get(id + \"IN\" + byteNo1 + \"-02\") * 4\n    + global.get(id + \"IN\" + byteNo1 + \"-03\") * 8\n    + global.get(id + \"IN\" + byteNo1 + \"-04\") * 16\n    + global.get(id + \"IN\" + byteNo1 + \"-05\") * 32\n    + global.get(id + \"IN\" + byteNo1 + \"-06\") * 64\n    + global.get(id + \"IN\" + byteNo1 + \"-07\") * 128\n    + global.get(id + \"IN\" + byteNo2 + \"-00\") * 256\n    + global.get(id + \"IN\" + byteNo2 + \"-01\") * 512\n    + global.get(id + \"IN\" + byteNo2 + \"-02\") * 1024\n    + global.get(id + \"IN\" + byteNo2 + \"-03\") * 2048\n    + global.get(id + \"IN\" + byteNo2 + \"-04\") * 4096\n    + global.get(id + \"IN\" + byteNo2 + \"-05\") * 8192\n    + global.get(id + \"IN\" + byteNo2 + \"-06\") * 16384\n    + global.get(id + \"IN\" + byteNo2 + \"-07\") * 32768\n    + global.get(id + \"IN\" + byteNo3 + \"-00\") * 65536\n    + global.get(id + \"IN\" + byteNo3 + \"-01\") * 131072\n    + global.get(id + \"IN\" + byteNo3 + \"-02\") * 262144\n    + global.get(id + \"IN\" + byteNo3 + \"-03\") * 524288\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 260,
+        "wires": [
+            [
+                "70c427f2e28f2f80"
+            ]
+        ]
+    },
+    {
+        "id": "8c6541107f5e4a23",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 260,
+        "wires": [
+            [
+                "8a02d8e49ed2bf42"
+            ]
+        ]
+    },
+    {
+        "id": "8bc6ea64f3ee477e",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "通算移動回数",
+        "func": "var byteNo1=20;\nvar byteNo2=21;\nvar byteNo3=22;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"IN\" + byteNo1 + \"-00\") * 1\n    + global.get(id + \"IN\" + byteNo1 + \"-01\") * 2\n    + global.get(id + \"IN\" + byteNo1 + \"-02\") * 4\n    + global.get(id + \"IN\" + byteNo1 + \"-03\") * 8\n    + global.get(id + \"IN\" + byteNo1 + \"-04\") * 16\n    + global.get(id + \"IN\" + byteNo1 + \"-05\") * 32\n    + global.get(id + \"IN\" + byteNo1 + \"-06\") * 64\n    + global.get(id + \"IN\" + byteNo1 + \"-07\") * 128\n    + global.get(id + \"IN\" + byteNo2 + \"-00\") * 256\n    + global.get(id + \"IN\" + byteNo2 + \"-01\") * 512\n    + global.get(id + \"IN\" + byteNo2 + \"-02\") * 1024\n    + global.get(id + \"IN\" + byteNo2 + \"-03\") * 2048\n    + global.get(id + \"IN\" + byteNo2 + \"-04\") * 4096\n    + global.get(id + \"IN\" + byteNo2 + \"-05\") * 8192\n    + global.get(id + \"IN\" + byteNo2 + \"-06\") * 16384\n    + global.get(id + \"IN\" + byteNo2 + \"-07\") * 32768\n    + global.get(id + \"IN\" + byteNo3 + \"-00\") * 65536\n    + global.get(id + \"IN\" + byteNo3 + \"-01\") * 131072\n    + global.get(id + \"IN\" + byteNo3 + \"-02\") * 262144\n    + global.get(id + \"IN\" + byteNo3 + \"-03\") * 524288\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 200,
+        "wires": [
+            [
+                "e828a661b6f336f0"
+            ]
+        ]
+    },
+    {
+        "id": "e828a661b6f336f0",
+        "type": "debug",
+        "z": "b412594149f5af42",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f8f00e36a3a3a18e",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "8bc6ea64f3ee477e"
+            ]
+        ]
+    },
+    {
+        "id": "bd13025b110eda2c",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "アラームコード",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar str01 = global.get(id + \"IN12\")\nvar str02 = global.get(id + \"IN13\")\n\nvar str =\"0x\" + str02 + str01\n\nvar hex = parseInt(str,16);\nvar strhex = hex.toString(16).toUpperCase()\nif (strhex.length == 2){\n    strhex = \"0\" + strhex\n}\n\nmsg.payload = strhex\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 120,
+        "wires": [
+            [
+                "9711da80e9f7fb80"
+            ]
+        ]
+    },
+    {
+        "id": "47f827203778d281",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "現在位置",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar str01 = global.get(id + \"IN0\")\nvar str02 = global.get(id + \"IN1\")\nvar str03 = global.get(id + \"IN2\")\nif(str03 == null){\n    str03 = \"00000000\"\n}\nvar str04 = global.get(id + \"IN3\")\nif(str04 == null){\n    str04 = \"00000000\"\n}\n\nvar str = \"0x\" + str04 + str03 + str02 + str01\n\nvar hex = parseInt(str,16);\n\n//２の補数計算（マイナス）\nvar twosComplement = str04.substring(0,1)\nif (twosComplement == \"f\"){\n    hex = hex - 16**8\n}\n\nvar num = hex * 0.01;\n\nnum = Math.round(num*100)/100\nmsg.payload = num\n\nreturn msg;\n\nvar res=65280;\nif(res&0x8000) res|= ~0xffff;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 80,
+        "wires": [
+            [
+                "eefe18cdea1908e7"
+            ]
+        ]
+    },
+    {
+        "id": "a431e3ff92cd6600",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [],
+        "repeat": "0.01",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 670,
+        "y": 80,
+        "wires": [
+            [
+                "47f827203778d281"
+            ]
+        ]
+    },
+    {
+        "id": "f8d357747382a5b1",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "PCON",
+        "func": "var id = flow.get(\"ID\")\n\nif(msg.payload == true){\n    global.set(\"AX\" + id + \"_\" + \"DT30-02\",0)\n    global.set(\"AX\" + id + \"_\" + \"DT30-00\",1)\n}\n\nif(msg.payload == false){\n    global.set(\"AX\" + id + \"_\" + \"DT30-00\",0)\n    global.set(\"AX\" + id + \"_\" + \"DT30-02\",1)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "7faeeba45a375d7c"
+            ]
+        ]
+    },
+    {
+        "id": "7faeeba45a375d7c",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "位置決め完了OFF確認　",
+        "func": "// 変数\nconst interval = 10000;\nconst targetTime = Date.now() + interval;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\n// 0.1秒間隔でx01を監視する関数をセット\nlet checkInterval = setInterval(() => {\n\n    var i = global.get(id + \"IN30-00\")\n\n    if (Date.now() >= targetTime) {\n        // 監視を停止\n        clearInterval(checkInterval);\n        node.send(msg)\n    }\n\n    if(i == 0){\n        // 監視を停止\n        clearInterval(checkInterval);\n        // スタート変数OFF\n        global.set(id + \"DT30-00\",0)\n    }\n}, 50);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4868bac2549578e1",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "リセット",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1920,
+        "y": 80,
+        "wires": [
+            [
+                "12c99f5cbe46ae95"
+            ]
+        ]
+    },
+    {
+        "id": "472272a2f033a1ef",
+        "type": "debug",
+        "z": "b412594149f5af42",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2300,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "12c99f5cbe46ae95",
+        "type": "change",
+        "z": "b412594149f5af42",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "O00",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "O01",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "AX01_DT00",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "AX01_DT08",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "AX01_DT30-02",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2080,
+        "y": 80,
+        "wires": [
+            [
+                "472272a2f033a1ef"
+            ]
+        ]
+    },
+    {
+        "id": "c2da58a37348f117",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "function 52",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nvar num = global.get(id + \"IN30-03\")\n\n if(num == 1){\n    msg.payload = true\n }\n\n  if(num == 0){\n    msg.payload = false\n }\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 80,
+        "wires": [
+            [
+                "1a08a5a399fcfd14"
+            ]
+        ]
+    },
+    {
+        "id": "aabb3af81035a8d0",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1230,
+        "y": 80,
+        "wires": [
+            [
+                "c2da58a37348f117",
+                "bd13025b110eda2c"
+            ]
+        ]
+    },
+    {
+        "id": "24fef807315dba43",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "function 53",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.set(id + \"DT30-03\",1)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 160,
+        "wires": [
+            [
+                "96a3adcd55d231fb"
+            ]
+        ]
+    },
+    {
+        "id": "90717c89b1c7cc93",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "function 54",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.set(id + \"DT30-03\", 0)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96a3adcd55d231fb",
+        "type": "delay",
+        "z": "b412594149f5af42",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1540,
+        "y": 160,
+        "wires": [
+            [
+                "90717c89b1c7cc93"
+            ]
+        ]
+    },
+    {
+        "id": "861df9605d06daa0",
+        "type": "ui_button",
+        "z": "b412594149f5af42",
+        "name": "",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "START",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "f8d357747382a5b1"
+            ]
+        ]
+    },
+    {
+        "id": "c1d4bb1989a3f3e0",
+        "type": "ui_button",
+        "z": "b412594149f5af42",
+        "name": "",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "f8d357747382a5b1"
+            ]
+        ]
+    },
+    {
+        "id": "92e4a31cd9172059",
+        "type": "ui_button",
+        "z": "b412594149f5af42",
+        "name": "",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "リセット",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1240,
+        "y": 160,
+        "wires": [
+            [
+                "24fef807315dba43"
+            ]
+        ]
+    },
+    {
+        "id": "18e73927ae6a410e",
+        "type": "ui_switch",
+        "z": "b412594149f5af42",
+        "name": "",
+        "label": "サーボON",
+        "tooltip": "",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "edda8af11c2a6edb"
+            ]
+        ]
+    },
+    {
+        "id": "eefe18cdea1908e7",
+        "type": "ui_text",
+        "z": "b412594149f5af42",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "現在位置",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1000,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1a08a5a399fcfd14",
+        "type": "ui_led",
+        "z": "b412594149f5af42",
+        "order": 1,
+        "group": "ef7ee9681b4c7a6d",
+        "width": 2,
+        "height": 1,
+        "label": "alarm",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "アラーム",
+        "x": 1560,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "9711da80e9f7fb80",
+        "type": "ui_text",
+        "z": "b412594149f5af42",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1570,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a44bcff951d3df6b",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "PCON",
+        "func": "var id = flow.get(\"ID\")\n\nif(msg.payload == true){\nglobal.set(\"AX\" + id + \"_\" + \"DT28-01\",1)\n}\n\nif(msg.payload == false){\nglobal.set(\"AX\" + id + \"_\" + \"DT28-01\",0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ace85b11c7850a0",
+        "type": "ui_switch",
+        "z": "b412594149f5af42",
+        "name": "",
+        "label": "押付制御",
+        "tooltip": "",
+        "group": "3fb627407ad74259",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "a44bcff951d3df6b"
+            ]
+        ]
+    },
+    {
+        "id": "28110f96b559719b",
+        "type": "ui_dropdown",
+        "z": "b412594149f5af42",
+        "name": "",
+        "label": "押付方向",
+        "tooltip": "",
+        "place": "",
+        "group": "3fb627407ad74259",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "+方向",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "-方向",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "85bedc1b03ceced8"
+            ]
+        ]
+    },
+    {
+        "id": "85bedc1b03ceced8",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "PCON",
+        "func": "var id = flow.get(\"ID\")\n\nif(msg.payload == true){\nglobal.set(\"AX\" + id + \"_\" + \"DT28-02\",1)\n}\n\nif(msg.payload == false){\nglobal.set(\"AX\" + id + \"_\" + \"DT28-02\",0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3eb336b68d5e0b0e",
+        "type": "function",
+        "z": "b412594149f5af42",
+        "name": "指令電流値",
+        "func": "var byteNo1=4;\nvar byteNo2=5;\nvar byteNo3=6;\nvar id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"IN\" + byteNo1 + \"-00\") * 1\n    + global.get(id + \"IN\" + byteNo1 + \"-01\") * 2\n    + global.get(id + \"IN\" + byteNo1 + \"-02\") * 4\n    + global.get(id + \"IN\" + byteNo1 + \"-03\") * 8\n    + global.get(id + \"IN\" + byteNo1 + \"-04\") * 16\n    + global.get(id + \"IN\" + byteNo1 + \"-05\") * 32\n    + global.get(id + \"IN\" + byteNo1 + \"-06\") * 64\n    + global.get(id + \"IN\" + byteNo1 + \"-07\") * 128\n    + global.get(id + \"IN\" + byteNo2 + \"-00\") * 256\n    + global.get(id + \"IN\" + byteNo2 + \"-01\") * 512\n    + global.get(id + \"IN\" + byteNo2 + \"-02\") * 1024\n    + global.get(id + \"IN\" + byteNo2 + \"-03\") * 2048\n    + global.get(id + \"IN\" + byteNo2 + \"-04\") * 4096\n    + global.get(id + \"IN\" + byteNo2 + \"-05\") * 8192\n    + global.get(id + \"IN\" + byteNo2 + \"-06\") * 16384\n    + global.get(id + \"IN\" + byteNo2 + \"-07\") * 32768\n    + global.get(id + \"IN\" + byteNo3 + \"-00\") * 65536\n    + global.get(id + \"IN\" + byteNo3 + \"-01\") * 131072\n    + global.get(id + \"IN\" + byteNo3 + \"-02\") * 262144\n    + global.get(id + \"IN\" + byteNo3 + \"-03\") * 524288\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "41fabab4c32708a1"
+            ]
+        ]
+    },
+    {
+        "id": "e77c1e1156ab7e40",
+        "type": "inject",
+        "z": "b412594149f5af42",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "3eb336b68d5e0b0e"
+            ]
+        ]
+    },
+    {
+        "id": "41fabab4c32708a1",
+        "type": "ui_chart",
+        "z": "b412594149f5af42",
+        "name": "",
+        "group": "9f383a4f387f2bb7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "指令電流 mA",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70c427f2e28f2f80",
+        "type": "debug",
+        "z": "b412594149f5af42",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a017acbe7f527a03",
+        "type": "ui_text",
+        "z": "ebb109eeb71cb9ae",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "目標位置",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1000,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "79f89bbb87b1e1d2",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 100,
+        "wires": [
+            [
+                "44ed40a84e591cf6"
+            ]
+        ]
+    },
+    {
+        "id": "44ed40a84e591cf6",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "function 35",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"DT01\") / 100\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 100,
+        "wires": [
+            [
+                "a017acbe7f527a03"
+            ]
+        ]
+    },
+    {
+        "id": "54a748f0e5801f73",
+        "type": "ui_text",
+        "z": "ebb109eeb71cb9ae",
+        "group": "0600a4ef969b41af",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "位置決め幅",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1010,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "78a07f311d2896fa",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "a6c701c6d00cab90"
+            ]
+        ]
+    },
+    {
+        "id": "a6c701c6d00cab90",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "function 36",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"DT4\") / 100\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 140,
+        "wires": [
+            [
+                "54a748f0e5801f73"
+            ]
+        ]
+    },
+    {
+        "id": "7a174ede2dca2321",
+        "type": "ui_text",
+        "z": "ebb109eeb71cb9ae",
+        "group": "0600a4ef969b41af",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "加速度",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 990,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5e2f5034293fe89f",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "7731dd3339958393"
+            ]
+        ]
+    },
+    {
+        "id": "7731dd3339958393",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "function 37",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"DT06\") / 100\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 220,
+        "wires": [
+            [
+                "7a174ede2dca2321"
+            ]
+        ]
+    },
+    {
+        "id": "273205d9eca43b82",
+        "type": "ui_text",
+        "z": "ebb109eeb71cb9ae",
+        "group": "0600a4ef969b41af",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "減速度",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 990,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b3ec8a071d0bb90b",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 260,
+        "wires": [
+            [
+                "fb9c118eddf9649c"
+            ]
+        ]
+    },
+    {
+        "id": "fb9c118eddf9649c",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "function 40",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"DT07\") / 100\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "273205d9eca43b82"
+            ]
+        ]
+    },
+    {
+        "id": "c2312de2b076813a",
+        "type": "ui_form",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "label": "位置",
+        "group": "ef7ee9681b4c7a6d",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "mm",
+                "value": "position",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "position": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "d6adbbe37cf63207"
+            ]
+        ]
+    },
+    {
+        "id": "d6adbbe37cf63207",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "global.AX**_DT01",
+        "func": "var id = flow.get(\"ID\")\nvar num = msg.payload.position * 100\n\n//globalへ格納\nglobal.set(\"AX\" + id + \"_\" + \"DT01\",num)\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3752c938232db36",
+        "type": "ui_form",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "label": "速度",
+        "group": "0600a4ef969b41af",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "mm/s",
+                "value": "speed",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "speed": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "248bd4535259719a"
+            ]
+        ]
+    },
+    {
+        "id": "248bd4535259719a",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "global.AX**_DT03",
+        "func": "var id = flow.get(\"ID\")\nvar num = msg.payload.speed * 100\n\n//globalへ格納\nglobal.set(\"AX\" + id + \"_\" + \"DT03\",num)\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c8d9c3cc08242d6",
+        "type": "ui_form",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "label": "加速度",
+        "group": "0600a4ef969b41af",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "G",
+                "value": "acc",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "acc": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "0fe78439c953a4ae"
+            ]
+        ]
+    },
+    {
+        "id": "4fc537f84fc3254e",
+        "type": "ui_form",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "label": "減速度",
+        "group": "0600a4ef969b41af",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "G",
+                "value": "dec",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "dec": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "92180e0d09e9176a"
+            ]
+        ]
+    },
+    {
+        "id": "0fe78439c953a4ae",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "global.AX**_DT06",
+        "func": "var id = flow.get(\"ID\")\nvar num = msg.payload.acc * 100\n\n//globalへ格納\nglobal.set(\"AX\" + id + \"_\" + \"DT06\",num)\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92180e0d09e9176a",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "global.AX**_DT07",
+        "func": "var id = flow.get(\"ID\")\nvar num = msg.payload.dec * 100\n\n//globalへ格納\nglobal.set(\"AX\" + id + \"_\" + \"DT07\",num)\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2f0b0517a778a1e",
+        "type": "change",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "01",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8bc300f8dffa65d1",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 20,
+        "wires": [
+            [
+                "f2f0b0517a778a1e"
+            ]
+        ]
+    },
+    {
+        "id": "c73245d962749fcf",
+        "type": "comment",
+        "z": "ebb109eeb71cb9ae",
+        "name": "目標位置",
+        "info": "",
+        "x": 80,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fe07f6f89f367c6a",
+        "type": "comment",
+        "z": "ebb109eeb71cb9ae",
+        "name": "速度",
+        "info": "",
+        "x": 70,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "51bae646a573e9fd",
+        "type": "comment",
+        "z": "ebb109eeb71cb9ae",
+        "name": "加速度",
+        "info": "",
+        "x": 70,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b6b17ab38ca9da02",
+        "type": "comment",
+        "z": "ebb109eeb71cb9ae",
+        "name": "減速度",
+        "info": "",
+        "x": 70,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c6f1f73bc4bbbf8d",
+        "type": "ui_text",
+        "z": "ebb109eeb71cb9ae",
+        "group": "0600a4ef969b41af",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "速度",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d40851f3fe40bfda",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 180,
+        "wires": [
+            [
+                "8e463e2e1112a022"
+            ]
+        ]
+    },
+    {
+        "id": "8e463e2e1112a022",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "function 51",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"DT03\") / 100\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 180,
+        "wires": [
+            [
+                "c6f1f73bc4bbbf8d"
+            ]
+        ]
+    },
+    {
+        "id": "2354beb3ad228029",
+        "type": "ui_form",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "label": "押付電流",
+        "group": "3fb627407ad74259",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "%",
+                "value": "pressLimit",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "pressLimit": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "89d29c300e1b1bd1"
+            ]
+        ]
+    },
+    {
+        "id": "89d29c300e1b1bd1",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "global.AX**_DT24",
+        "func": "var id = flow.get(\"ID\")\nvar num = Math.floor(msg.payload.pressLimit * 2.55)\n\n//globalへ格納\nglobal.set(\"AX\" + id + \"_\" + \"DT24\",num)\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8db107499ad4443",
+        "type": "comment",
+        "z": "ebb109eeb71cb9ae",
+        "name": "減速度",
+        "info": "",
+        "x": 70,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ef8170cf2aca8a87",
+        "type": "ui_form",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "label": "押付距離",
+        "group": "3fb627407ad74259",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "mm",
+                "value": "pressDistance",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "pressDistance": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 220,
+        "y": 340,
+        "wires": [
+            [
+                "edee662ce29e2fd9"
+            ]
+        ]
+    },
+    {
+        "id": "edee662ce29e2fd9",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "global.AX**_DT4",
+        "func": "var id = flow.get(\"ID\")\nvar num = msg.payload.pressDistance * 100\n\n//globalへ格納\nglobal.set(\"AX\" + id + \"_\" + \"DT4-2\",num)\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "230d69630a273958",
+        "type": "comment",
+        "z": "ebb109eeb71cb9ae",
+        "name": "減速度",
+        "info": "",
+        "x": 70,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "093d9bb0e71d0fb1",
+        "type": "ui_text",
+        "z": "ebb109eeb71cb9ae",
+        "group": "3fb627407ad74259",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "押付電流",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1000,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "83041833a61ffa13",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "31ab3ee5e25f586d"
+            ]
+        ]
+    },
+    {
+        "id": "31ab3ee5e25f586d",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "function 57",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"DT24\")\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 300,
+        "wires": [
+            [
+                "093d9bb0e71d0fb1"
+            ]
+        ]
+    },
+    {
+        "id": "40435c2efb02dcbd",
+        "type": "ui_text",
+        "z": "ebb109eeb71cb9ae",
+        "group": "3fb627407ad74259",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "押付距離",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1000,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9ff183047f02e2c9",
+        "type": "inject",
+        "z": "ebb109eeb71cb9ae",
+        "name": "",
+        "props": [],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 670,
+        "y": 340,
+        "wires": [
+            [
+                "a98280aaf2b3e302"
+            ]
+        ]
+    },
+    {
+        "id": "a98280aaf2b3e302",
+        "type": "function",
+        "z": "ebb109eeb71cb9ae",
+        "name": "function 58",
+        "func": "var id = \"AX\" + flow.get(\"ID\") + \"_\"\n\nmsg.payload = global.get(id + \"DT4-2\") / 100\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 340,
+        "wires": [
+            [
+                "40435c2efb02dcbd"
+            ]
+        ]
+    }
+]
